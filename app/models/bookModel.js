@@ -1,3 +1,38 @@
+module.exports = (sequelize, Sequelize) => {
+  const Book = sequelize.define("books", {
+    titulo: {
+      type: Sequelize.STRING
+    },
+    autor: {
+      type: Sequelize.STRING
+    },
+    editorial: {
+      type: Sequelize.STRING
+    },
+    anio_publicacion: {
+      type: Sequelize.STRING
+    },
+    categoria_id: {
+      type: Sequelize.INTEGER
+    },
+    isbn: {
+      type: Sequelize.STRING
+    },
+    sinopsis: {
+      type: Sequelize.STRING
+    },
+    img: {
+      type: Sequelize.STRING
+    },
+    link_acceso: {
+      type: Sequelize.STRING
+    }
+  });
+
+  return Book;
+};
+
+/*
 const sql = require("./mysqldb.js");
 
 // constructor
@@ -119,3 +154,4 @@ Book.removeAll = result => {
 };
 
 module.exports = Book;
+*/
