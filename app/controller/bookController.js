@@ -13,13 +13,13 @@ exports.create = (req, res) => {
     const book = new Book({
         titulo : req.body.titulo,
         autor : req.body.autor,
-        editorial : req.body.autor,
-        anio_publicacion : req.body.autor,
-        categoria_id : req.body.autor,
-        isbn : req.body.autor,
-        sinopsis : req.body.autor,
-        img : req.body.autor,
-        link_acceso : req.body.autor,
+        editorial : req.body.editorial,
+        anio_publicacion : req.body.anio_publicacion,
+        categoria_id : req.body.categoria_id,
+        isbn : req.body.isbn,
+        sinopsis : req.body.sinopsis,
+        img : req.body.img,
+        link_acceso : req.body.link_acceso,
     });
   
     // Guardar libro en la base de datos
