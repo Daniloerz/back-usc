@@ -5,7 +5,7 @@ exports.create = (req, res) => {
     // Validate request
     if (!req.body) {
       res.status(400).send({
-        message: "Content can not be empty!"
+        message: "El contenido no puede estar vacío"
       });
     }
   
@@ -41,7 +41,7 @@ exports.findAll = (req, res) => {
       if (err)
         res.status(500).send({
           message:
-            err.message || "Some error occurred while retrieving books."
+            err.message || "Error encontrando los libros"
         });
       else res.send(data);
     });
@@ -69,7 +69,7 @@ exports.update = (req, res) => {
     // Validar petición
     if (!req.body) {
       res.status(400).send({
-        message: "Content can not be empty!"
+        message: "El contenido no puede estar vacío"
       });
     }
   
